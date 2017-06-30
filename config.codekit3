@@ -19,6 +19,77 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/smoothscroll\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/smoothscroll\/_travis.yml": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/bower_components\/smoothscroll\/_travis.yml",
+		"oF": 0
+		},
+	"\/bower_components\/smoothscroll\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/smoothscroll\/dist\/smoothscroll.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/dist\/smoothscroll.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/smoothscroll\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/smoothscroll\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/smoothscroll\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/smoothscroll\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/css\/.sass-cache\/005e79ecf1226922d8fafe269ec1704d5245e578\/style.scssc": {
 		"ft": 8192,
 		"oA": 2,
@@ -73,6 +144,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/magical.png": {
+		"ft": 32768,
+		"iS": 213576,
+		"oA": 0,
+		"oAP": "\/img\/magical.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/mixer.jpg": {
 		"ft": 16384,
@@ -150,6 +232,66 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/dancing.jpg": {
+		"ft": 16384,
+		"iS": 23514,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/dancing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/flashing.jpg": {
+		"ft": 16384,
+		"iS": 6752,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/flashing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/fun.jpg": {
+		"ft": 16384,
+		"iS": 24891,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/fun.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/magical.jpg": {
+		"ft": 16384,
+		"iS": 15468,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/magical.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/nugget.jpg": {
+		"ft": 16384,
+		"iS": 21070,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/nugget.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/thumbsAndIcons\/push.jpg": {
+		"ft": 16384,
+		"iS": 11944,
+		"oA": 0,
+		"oAP": "\/img\/thumbsAndIcons\/push.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/index.html": {
@@ -414,6 +556,153 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/ui-bootstrap-tpls-2.5.0.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lightbox\/css\/lightbox.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/lightbox\/css\/lightbox-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/lightbox\/css\/lightbox.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/lightbox\/css\/lightbox.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/lightbox\/images\/close.png": {
+		"ft": 32768,
+		"iS": 280,
+		"oA": 0,
+		"oAP": "\/lightbox\/images\/close.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/lightbox\/images\/loading.gif": {
+		"ft": 4194304,
+		"iS": 8476,
+		"oA": 0,
+		"oAP": "\/lightbox\/images\/loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lightbox\/images\/next.png": {
+		"ft": 32768,
+		"iS": 1350,
+		"oA": 0,
+		"oAP": "\/lightbox\/images\/next.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/lightbox\/images\/prev.png": {
+		"ft": 32768,
+		"iS": 1360,
+		"oA": 0,
+		"oAP": "\/lightbox\/images\/prev.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/lightbox\/js\/lightbox-plus-jquery.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lightbox\/js\/lightbox-plus-jquery-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lightbox\/js\/lightbox-plus-jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lightbox\/js\/lightbox-plus-jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lightbox\/js\/lightbox-plus-jquery.min.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lightbox\/js\/lightbox-plus-jquery.min.map",
+		"oF": 0
+		},
+	"\/lightbox\/js\/lightbox.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lightbox\/js\/lightbox-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lightbox\/js\/lightbox.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/lightbox\/js\/lightbox.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/lightbox\/js\/lightbox.min.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lightbox\/js\/lightbox.min.map",
+		"oF": 0
+		},
+	"\/litty\/lity.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/litty\/lity-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/litty\/lity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/litty\/lity-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/litty\/lity.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/litty\/lity.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/litty\/lity.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/litty\/lity.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

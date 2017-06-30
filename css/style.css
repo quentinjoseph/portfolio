@@ -10,7 +10,7 @@ body {
   body h2 {
     margin: 0; }
   body .selected {
-    background-color: #eeeceb;
+    color: red;
     border-radius: 4px; }
   body .hide {
     display: none; }
@@ -304,3 +304,27 @@ body {
       width: 75vw;
       height: 50vh;
       margin: 0 auto; }
+
+.container #projectsHolder #videoDiv #youtubeStuff {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
+  display: inline-block; }
+  .container #projectsHolder #videoDiv #youtubeStuff .videoImage {
+    padding: 0 1rem;
+    display: inline-block;
+    width: 45vw;
+    height: 40vh; }
+    .container #projectsHolder #videoDiv #youtubeStuff .videoImage img {
+      width: 100%;
+      height: auto; }
+
+.container #projectsHolder #videoDiv #arrowsDiv {
+  width: 25vw;
+  font-size: 2rem;
+  margin: auto;
+  text-align: center; }
+  .container #projectsHolder #videoDiv #arrowsDiv #more {
+    font-size: 1rem;
+    color: blue; }
