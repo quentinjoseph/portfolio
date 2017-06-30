@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100");
+/*font-family: 'Josefin Sans', sans-serif;*/
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; }
+  body h2 {
+    margin: 0; }
+  body .selected {
+    background-color: #eeeceb;
+    border-radius: 4px; }
+  body .hide {
+    display: none; }
+  body .container {
+    width: 100%;
+    height: auto; }
+    body .container a {
+      color: black;
+      text-decoration: none; }
+    body .container .underline:hover {
+      border-radius: 4px;
+      background-color: #eeeceb;
+      transition: background-color .2s; }
+
+@keyframes nameWidth {
+  from {
+    width: 0%;
+    height: 0%; }
+  to {
+    width: 50%;
+    height: 0%; } }
+
+@keyframes nameHeight {
+  from {
+    height: 0%; }
+  to {
+    height: 12%; } }
+    body .container .nameLinesDiv {
+      position: absolute;
+      pointer-events: none;
+      border-top: solid 0.5px black;
+      width: 50%;
+      border-right: solid 0.5px black;
+      height: 12%;
+      animation: nameWidth 1s, nameHeight 1s 1s; }
+
+@keyframes nameWidthLeave {
+  from {
+    width: 50%;
+    height: 0%; }
+  to {
+    width: 0%;
+    height: 0%; } }
+
+@keyframes nameHeightLeave {
+  from {
+    width: 50%;
+    height: 12%; }
+  to {
+    width: 0%;
+    height: 0%; } }
+    body .container .nameLinesDivLeave {
+      border-top: solid 0.5px black;
+      width: 0%;
+      border-right: solid 0.5px black;
+      height: 0%;
+      animation: nameHeightLeave 1s, nameWidthLeave 1s; }
+
+@keyframes aboutWidth {
+  from {
+    width: 0%;
+    height: 0px; }
+  to {
+    width: 50%;
+    height: 0px; } }
+
+@keyframes aboutHeight {
+  from {
+    height: 0px; }
+  to {
+    height: 75px; } }
+    body .container .aboutLinesDiv {
+      position: absolute;
+      pointer-events: none;
+      border-top: solid 0.5px black;
+      width: 50%;
+      border-right: solid 0.5px black;
+      height: 75px;
+      animation: aboutWidth 1s, aboutHeight 1s 1.0s; }
+
+@keyframes aboutWidthLeave {
+  from {
+    width: 50%;
+    height: 0%; }
+  to {
+    width: 0%;
+    height: 0%; } }
+
+@keyframes aboutHeightLeave {
+  from {
+    width: 50%;
+    height: 75px; }
+  to {
+    width: 0%;
+    height: 0%; } }
+    body .container .aboutLinesDivLeave {
+      border-top: solid 0.5px black;
+      width: 0%;
+      border-right: solid 0.5px black;
+      height: 0%;
+      animation: aboutHeightLeave 1s, aboutWidthLeave 1s; }
+
+@keyframes projectWidth {
+  from {
+    width: 0%;
+    height: 0px; }
+  to {
+    width: 50%;
+    height: 0px; } }
+
+@keyframes projectHeight {
+  from {
+    height: 0px; }
+  to {
+    height: 37.5px; } }
+    body .container .projectLinesDiv {
+      position: fixed;
+      z-index: 3;
+      border-top: solid 0.5px black;
+      width: 50%;
+      border-right: solid 0.5px black;
+      height: 37.5px;
+      animation: projectWidth 1s, projectHeight 1s 1.0s; }
+
+@keyframes projectWidthLeave {
+  from {
+    width: 50%;
+    height: 0%; }
+  to {
+    width: 0%;
+    height: 0%; } }
+
+@keyframes projectHeightLeave {
+  from {
+    height: 37.5px; }
+  to {
+    height: 0%; } }
+    body .container .projectLinesDivLeave {
+      border-top: solid 0.5px black;
+      width: 0%;
+      border-right: solid 0.5px black;
+      height: 0%;
+      animation: projectHeightLeave 1s, projectWidthLeave 1s; }
+    body .container span:hover {
+      border-radius: 4px;
+      background-color: #eeeceb; }
+    body .container .namebox {
+      color: black;
+      margin: 0;
+      width: 20%; }
+      body .container .namebox .red {
+        color: red; }
+    body .container .aboutbox {
+      color: black;
+      width: 40%; }
+    body .container .mediabox {
+      color: black;
+      width: 12%; }
+
+.landingContainer {
+  width: 100%;
+  margin: auto; }
+
+@keyframes mixerAndMac {
+  0% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .landingContainer img {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;
+    animation: mixerAndMac 3s; }
+  .landingContainer #name {
+    margin-top: -150px;
+    text-align: center;
+    position: relative;
+    font-size: 70px;
+    letter-spacing: 15px;
+    color: white;
+    animation: mixerAndMac 3s; }
+    .landingContainer #name span {
+      color: #9b0423;
+      animation: mixerAndMac 3s; }
+  .landingContainer .message {
+    text-align: center;
+    margin-top: 80px;
+    animation: mixerAndMac 3s; }
+
+@keyframes aboutDiv {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.aboutDiv {
+  border-radius: 5px;
+  opacity: 1;
+  font-size: 27px;
+  width: 70vw;
+  padding-top: 40px;
+  margin: auto;
+  text-align: center;
+  animation: aboutDiv 2s; }
+  .aboutDiv .qface {
+    width: 100%;
+    margin: auto;
+    color: black; }
+
+@keyframes qdrums {
+  0% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .aboutDiv .qface #qdrums {
+      width: 300px;
+      border-radius: 150px;
+      animation: qdrums 3s; }
+
+@keyframes textShow {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
+
+.textShow {
+  color: black;
+  opacity: 1;
+  animation: textShow 2.5s; }
+
+.container .projectsNav {
+  width: 100%; }
+
+@keyframes navShow {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
+  .container .projectsNav ul {
+    text-align: center;
+    margin-top: 45px;
+    animation: navShow 2s; }
+    .container .projectsNav ul li {
+      font-size: 36px;
+      padding: 0 10%;
+      display: inline;
+      list-style: none; }
+
+.container #projectsHolder #websiteDiv #nikkisite {
+  margin: 0 auto;
+  width: 95vw;
+  height: 8rem;
+  background-image: url("../img/nikkisite.png");
+  background-size: cover;
+  background-position: center; }
+
+.container #projectsHolder #websiteDiv #quentinsite {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 95vw;
+  height: 8rem;
+  background-image: url("../img/quentinsite.png");
+  background-size: cover;
+  background-position: center; }
+
+.container #projectsHolder #audioDiv {
+  margin: 0 auto;
+  width: 95vw;
+  height: 50vh; }
+  .container #projectsHolder #audioDiv #soundcloudStuff {
+    height: 50vh;
+    width: 75vw;
+    margin: 0 auto; }
+    .container #projectsHolder #audioDiv #soundcloudStuff iframe {
+      width: 75vw;
+      height: 50vh;
+      margin: 0 auto; }

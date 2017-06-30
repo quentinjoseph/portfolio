@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Quentin Joseph</title>
+  </head>
+  <body ng-app='appMod' ng-controller='controller1' >
+    <div class="container">
+
+<div id="nav">
+          <div class="namebox lineup">
+            <h2><a ng-click='nameClick()' class="underline" href="#!/landing"><span class="red">h</span>om<span class="red">e</span</a></h2>
+          </div> <div id='nlD' class="nameLinesDiv"></div>
+          <div class="aboutbox lineup">
+            <h2><a ng-click='aboutClick()' href="#!/aboutMe"><span class="underline">about me</span></a></h2>
+          </div> <div id='alD' class="aboutLinesDivLeave"></div>
+          <div class="mediabox lineup">
+            <h2><a ng-click='projectClick()' href="#!/projects"><span class="underline">projects</span></a></h2>
+          </div>
+          <div id='plD' class="projectLinesDivLeave">
+          </div>
+
+</div>
+
+
+
+
+
+    <ng-view autoscroll="true"></ng-view>
+    </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+<script type="text/javascript" src="js/controller1.js"></script>
+<script type="text/javascript" src="js/projectsControler.js"></script>
+
+
+  </body>
+</html>

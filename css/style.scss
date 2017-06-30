@@ -1,0 +1,395 @@
+$text-color: black;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
+/*font-family: 'Josefin Sans', sans-serif;*/
+
+body{
+
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+
+  h2{
+    margin:0
+  }
+ .selected{
+  background-color: rgba(238, 236, 235, 1);
+  border-radius: 4px;
+ }
+ .hide{
+   display: none;
+ }
+
+    .container{
+      width: 100%;
+      height: auto;
+      a{
+        color: $text-color;
+        text-decoration: none;
+      }
+      .underline:hover{
+        // border: solid 1px $text-color;
+        border-radius: 4px;
+        background-color: rgba(238, 236, 235, 1);
+        transition: background-color .2s;
+      }
+      // #ldN{
+      //   position:absolute;
+      //   margin-left: 5%;
+      // }
+
+
+// Name Lines Animation
+      @keyframes nameWidth{
+        from{
+          width:0%;
+          height: 0%;
+        }
+        to{
+          width:50%;
+          height: 0%;
+        }
+      }
+      @keyframes nameHeight{
+        from{
+          height: 0%;
+        }
+        to{
+          height:12%;
+        }
+      }
+      .nameLinesDiv{
+        position: absolute;
+        pointer-events:none;
+        border-top: solid .5px $text-color;
+        width:50%;
+        border-right: solid .5px $text-color;
+        height: 12%;
+        animation:nameWidth 1s, nameHeight 1s 1s;
+
+      }
+      @keyframes nameWidthLeave{
+        from{
+          width:50%;
+          height: 0%;
+        }
+        to{
+          width:0%;
+          height: 0%;
+        }
+      }
+      @keyframes nameHeightLeave{
+        from{
+          width: 50%;
+          height: 12%;
+        }
+        to{
+          width: 0%;
+          height:0%;
+        }
+      }
+      .nameLinesDivLeave{
+        border-top: solid .5px $text-color;
+        width:0%;
+        border-right: solid .5px $text-color;
+        height: 0%;
+        animation:nameHeightLeave 1s, nameWidthLeave 1s;
+      }
+
+// About Lines Animation
+      @keyframes aboutWidth{
+        from{
+          width:0%;
+          height: 0px;
+        }
+        to{
+          width:50%;
+          height: 0px;
+        }
+      }
+      @keyframes aboutHeight{
+        from{
+          height: 0px;
+        }
+        to{
+          height:75px;
+        }
+      }
+      .aboutLinesDiv{
+        position: absolute;
+        pointer-events:none;
+        border-top: solid .5px $text-color;
+        width:50%;
+        border-right: solid .5px $text-color;
+        height: 75px;
+        animation: aboutWidth 1s, aboutHeight 1s 1.0s;
+
+      }
+      @keyframes aboutWidthLeave{
+        from{
+          width:50%;
+          height: 0%;
+        }
+        to{
+          width:0%;
+          height: 0%;
+        }
+      }
+      @keyframes aboutHeightLeave{
+        from{
+          width:50%;
+          height: 75px;
+        }
+        to{
+          width: 0%;
+          height:0%;
+        }
+      }
+      .aboutLinesDivLeave{
+        border-top: solid .5px $text-color;
+        width:0%;
+        border-right: solid .5px $text-color;
+        height: 0%;
+        animation:aboutHeightLeave 1s, aboutWidthLeave 1s;
+      }
+
+
+//Projects Line
+
+          @keyframes projectWidth{
+            from{
+              width:0%;
+              height: 0px;
+            }
+            to{
+              width:50%;
+              height: 0px;
+            }
+          }
+          @keyframes projectHeight{
+            from{
+              height: 0px;
+            }
+            to{
+              height:37.5px;
+            }
+          }
+          .projectLinesDiv{
+            position: fixed;
+            z-index: 3;
+            border-top: solid .5px $text-color;
+            width:50%;
+            border-right: solid .5px $text-color;
+            height: 37.5px;
+            animation: projectWidth 1s, projectHeight 1s 1.0s;
+
+          }
+          @keyframes projectWidthLeave{
+            from{
+              width:50%;
+              height: 0%;
+            }
+            to{
+              width:0%;
+              height: 0%;
+            }
+          }
+          @keyframes projectHeightLeave{
+            from{
+              height: 37.5px;
+            }
+            to{
+              height:0%;
+            }
+          }
+          .projectLinesDivLeave{
+            border-top: solid .5px $text-color;
+            width:0%;
+            border-right: solid .5px $text-color;
+            height: 0%;
+            animation:projectHeightLeave 1s, projectWidthLeave 1s;
+          }
+          span:hover{
+            border-radius: 4px;
+            background-color: rgba(238, 236, 235, 1);
+          }
+
+
+
+// Categories
+      .namebox{
+        color: $text-color;
+        margin: 0;
+        width:20%;
+          .red{
+            color:red;
+          }
+      }
+      .aboutbox{
+
+        // margin:auto;
+        // text-align: center;
+        color: $text-color;
+        width:40%;
+      }
+      .mediabox{
+        // float:right;
+        // position: relative;
+        color: $text-color;
+        // margin: -2%;
+        width:12%;
+      }
+
+      // .lineup{
+      //   display:inline-block;
+      // }
+   }
+
+}
+
+
+// landing page
+.landingContainer{
+  width:100%;
+  margin: auto;
+  @keyframes mixerAndMac{
+    0%{opacity: 0;}
+    65%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  img{
+    display:block;
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;
+    animation: mixerAndMac 3s;
+  }
+  #name{
+    margin-top: -150px;
+    // margin-left: 205px;
+    text-align: center;
+    position:relative;
+    font-size: 70px;
+    letter-spacing: 15px;
+    color: white;
+    animation: mixerAndMac 3s;
+    span{
+      color:#9b0423;
+      animation: mixerAndMac 3s;
+    }
+  }
+  .message{
+    text-align: center;
+    margin-top: 80px;
+    animation: mixerAndMac 3s;
+  }
+}
+
+
+//about page view
+@keyframes aboutDiv{
+0% {opacity: 0;}
+50%{ opacity:0;}
+to{opacity: 1;}
+}
+.aboutDiv{
+  border-radius: 5px;
+  opacity: 1;
+  font-size: 27px;
+  width:70vw;
+  padding-top: 40px;
+  margin:auto;
+  text-align: center;
+  animation:aboutDiv 2s;
+  .qface{
+    width:100%;
+    margin: auto;
+  color: $text-color;
+  @keyframes qdrums{
+    0%{opacity: 0;}
+    65%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  #qdrums{
+    width: 300px;
+    border-radius: 150px;
+    animation: qdrums 3s;
+  }
+  }
+}
+@keyframes textShow{
+0% {opacity: 0;}
+50%{ opacity:0;}
+75%{ opacity: .7;}
+100%{opacity: 1;}
+}
+.textShow{
+  color: $text-color;
+  opacity: 1;
+  animation:textShow 2.5s;
+}
+// projects page
+
+.container{
+  .projectsNav{
+  width:100%;
+  @keyframes navShow{
+  0% {opacity: 0;}
+  50%{ opacity:0;}
+  75%{ opacity: .7;}
+  100%{opacity: 1;}
+  }
+  ul{
+    text-align: center;
+    margin-top: 45px;
+    animation: navShow 2s;
+    li{
+      font-size: 36px;
+      padding: 0 10%;
+      display: inline;
+      list-style: none;
+
+    }
+   }
+  }
+  #projectsHolder{
+    #websiteDiv{
+      #nikkisite{
+        margin: 0 auto;
+        width:95vw;
+        height: 8rem;
+        background-image: url('../img/nikkisite.png');
+        background-size: cover;
+        background-position: center;
+      }
+      #quentinsite{
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:1rem;
+        width:95vw;
+        height: 8rem;
+        background-image: url('../img/quentinsite.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+    }
+    #audioDiv{
+      margin:0 auto;
+      width:95vw;
+      height:50vh;
+      #soundcloudStuff{
+        height: 50vh;
+        width: 75vw;
+        margin:0 auto;
+        iframe{
+          width: 75vw;
+          height: 50vh;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
