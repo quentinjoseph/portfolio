@@ -84,7 +84,18 @@ console.log('down'+indexCount)
 
 }
 
+// var nikksiteDetails= angular.element(document.querySelector('#nikkisiteDetails'));
+$scope.showDetails=function(data){
+var target = angular.element(document.querySelector('#'+data.target.id+'Details'));
+    target.removeClass('hide');
+    
+}
+ $scope.hideDetails=function(data){
+   var details = angular.element(document.querySelector('#'+data.target.id+'Details'));
+
+       details.addClass('hide');
 
 
+ }
 
 });

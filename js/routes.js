@@ -6,7 +6,11 @@ app.config(function($routeProvider) {
       templateUrl: 'views/projects.html',
       controller: 'projectsController'
     }).when('/landing',{
-      templateUrl:'views/landing.html'
+      templateUrl:'views/landing.html',
+      controller:'controller1'
+    }).when('/contact',{
+      templateUrl:'views/contact.html',
+      controller:'controller1'
     }).otherwise('/landing');
 
   });

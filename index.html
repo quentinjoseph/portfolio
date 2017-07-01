@@ -4,33 +4,44 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="litty/lity.min.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quentin Joseph</title>
   </head>
   <body ng-app='appMod' ng-controller='controller1' >
     <div class="container">
 
-<div id="nav">
-          <div class="namebox lineup">
-            <h2><a ng-click='nameClick()' class="underline" href="#!/landing"><span class="red">h</span>om<span class="red">e</span</a></h2>
-          </div> <div id='nlD' class="nameLinesDiv"></div>
-          <div class="aboutbox lineup">
-            <h2><a ng-click='aboutClick()' href="#!/aboutMe"><span class="underline">about me</span></a></h2>
-          </div> <div id='alD' class="aboutLinesDivLeave"></div>
-          <div class="mediabox lineup">
-            <h2><a ng-click='projectClick()' href="#!/projects"><span class="underline">projects</span></a></h2>
-          </div>
-          <div id='plD' class="projectLinesDivLeave">
-          </div>
+<div id="wrapper"><div class="fullNav">
+  <a href="#!/landing">Home</a>
+  <a href="#!/aboutMe">About Me</a>
+  <a href="#!/projects">Projects</a>
+  <a href="#!/contact">Contact</a>
+</div>
 
+<div class="circleNav"><span class="mobileNav" style="font-size:50px;cursor:pointer" ng-click="openNav()">&#9776; </span></div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+  <a ng-click="closeNav()" href="#!/home">home</a>
+  <a ng-click="closeNav()" href="#!/aboutMe">about me</a>
+  <a ng-click="closeNav()" href="#!/projects">projects</a>
+  <a ng-click="closeNav()" href="#!/contact">contact</a>
 </div>
 
 
 
 
 
+
     <ng-view autoscroll="true"></ng-view>
+  </div>
     </div>
+    <footer>
+      <div class="iconsDiv">
+      <a href="https://www.facebook.com/quentinjoseph" target="blank"><img class="footerIcons"src="img/icons/FB.png" alt=""></a>
+      <a href="https://www.instagram.com/quentinjoseph/" target="blank"><img class="footerIcons"src="img/icons/instagram.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/quentinjoseph/" target="blank"><img class="footerIcons"src="img/icons/linkedin.png" alt=""></a>
+     </div>
+   </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="lib/angular.min.js"></script>
 <script type="text/javascript" src="lib/angular-route.min.js"></script>

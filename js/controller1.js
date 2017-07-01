@@ -53,7 +53,15 @@ $scope.checkURL();
 
 
 
+// mobile slide nav
+$scope.openNav=function() {
 
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+$scope.closeNav=function() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 
 

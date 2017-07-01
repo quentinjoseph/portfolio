@@ -125,6 +125,126 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/fonts\/Montserrat-Light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Montserrat-Light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Montserrat-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Montserrat-Regular.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Montserrat-Thin.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Montserrat-Thin.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Black.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Black.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Bold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Bold.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-BoldIt.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-BoldIt.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Extrabold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Extrabold.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Light.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Light.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-LightItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-LightItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-RegItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-RegItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Regular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Regular.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-RegularItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-RegularItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-Semibold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-Semibold.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNova-SemiboldItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNova-SemiboldItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-Light.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-Light.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-LightIt.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-LightIt.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-Regular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-Regular.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-RegularIt.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-RegularIt.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-Semibold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-Semibold.otf",
+		"oF": 0
+		},
+	"\/fonts\/Proxima-Nova\/ProximaNovaCond-SemiboldIt.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Proxima-Nova\/ProximaNovaCond-SemiboldIt.otf",
+		"oF": 0
+		},
 	"\/img\/background.jpg": {
 		"ft": 16384,
 		"iS": 124857,
@@ -133,6 +253,39 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/icons\/FB.png": {
+		"ft": 32768,
+		"iS": 1596,
+		"oA": 0,
+		"oAP": "\/img\/icons\/FB.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/icons\/instagram.png": {
+		"ft": 32768,
+		"iS": 1848,
+		"oA": 0,
+		"oAP": "\/img\/icons\/instagram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/icons\/linkedin.png": {
+		"ft": 32768,
+		"iS": 1673,
+		"oA": 0,
+		"oAP": "\/img\/icons\/linkedin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/lines.svg": {
@@ -711,6 +864,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/views\/about.html",
+		"oF": 0
+		},
+	"\/views\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/views\/contact.html",
 		"oF": 0
 		},
 	"\/views\/eventmanage.html": {

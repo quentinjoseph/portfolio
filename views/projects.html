@@ -1,17 +1,24 @@
 <div class="container">
 
   <div class="projectsNav">
+    <div class="select"><p>select an option</p></div>
     <ul>
       <li><span ng-click="projectSelect($event)" id="videos" class="">Videos</span></li>
-      <li><span ng-click="projectSelect($event)" id="websites" class="selected">Websites</span></li>
+      <li><span ng-click="projectSelect($event)" id="websites" class="">Websites</span></li>
       <li><span ng-click="projectSelect($event)" id="audio" class="">Audio</span></li>
     </ul>
   </div>
 <!-- project div -->
 <div id="projectsHolder">
-  <div id="websiteDiv" class="">
-    <a href="https://nicolejoseph.herokuapp.com/#!/home" target="blank"><div id="nikkisite"></div></a>
-    <div id="quentinsite"></div>
+  <div id="websiteDiv" class="hide">
+    <a href="https://nicolejoseph.herokuapp.com/#!/home" target="blank"><div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="nikkisite"></div></a>
+    <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinsite"></div>
+    <div id="nikkisiteDetails" class="hide detailsDiv">
+    A site created from scratch using HTML5, CSS, Angular JS, JavaScript, NodeJS, Mailjet API, Google Maps API as well as geolocation,  and a Postgresql Database. Also uses the plugins, Lity, Lightbox, and Smoothscroll. nicolejosephsprano.com (click the thumbnail to visit the site)
+    </div>
+    <div id="quentinsiteDetails" class="hide detailsDiv">
+    This site.  Created from scratch using HTML5, CSS, Angular JS, and JavaScript. Also uses the plugins, Lity and Smoothscroll.
+    </div>
   </div>
 
 <!--video div  -->
@@ -19,7 +26,10 @@
     <div id="youtubeStuff" class="">
 <div class="videoImage" id="marker{{$index}}" ng-repeat="vid in vids"><a href="//{{vid.vid}}" data-lity><img src="{{vid.thumb}}" alt=""></a></div>
     </div>
-    <div id="arrowsDiv"><span ng-click="moveVideoRev()"> < left </span> <span id="more">(more videos)</span> <span ng-click="moveVideo()"> right > </span></div>
+    <div id="arrowsDiv">
+      <div id="arrowLeft"><span ng-click="moveVideoRev()"> < left </span></div> <span id="scroll">(scroll or use arrows)</span>
+      <div id="arrowRight"><span ng-click="moveVideo()"> right > </span></div>
+    </div>
   </div>
 
 
