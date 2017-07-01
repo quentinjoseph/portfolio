@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.ftpconfig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.ftpconfig",
+		"oF": 0
+		},
 	"\/backup\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -327,6 +333,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/img\/mixerMacBigOpt.jpg": {
+		"ft": 16384,
+		"iS": 846235,
+		"oA": 0,
+		"oAP": "\/img\/mixerMacBigOpt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/img\/nicolejosephsite": {

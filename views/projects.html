@@ -4,13 +4,13 @@
     <div class="select"><p>select an option</p></div>
     <ul>
       <li><span ng-click="projectSelect($event)" id="videos" class="">Videos</span></li>
-      <li><span ng-click="projectSelect($event)" id="websites" class="">Websites</span></li>
+      <li><span ng-click="projectSelect($event)" id="websites" class="selected">Websites</span></li>
       <li><span ng-click="projectSelect($event)" id="audio" class="">Audio</span></li>
     </ul>
   </div>
 <!-- project div -->
 <div id="projectsHolder">
-  <div id="websiteDiv" class="hide">
+  <div id="websiteDiv" class="">
     <a href="https://nicolejoseph.herokuapp.com/#!/home" target="blank"><div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="nikkisite"></div></a>
     <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinsite"></div>
     <div id="nikkisiteDetails" class="hide detailsDiv">
