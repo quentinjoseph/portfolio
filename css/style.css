@@ -58,6 +58,7 @@ body {
             background-color: grey;
             color: black; }
       body .container #wrapper .mobileNav {
+        position: absolute;
         text-align: center;
         width: 60px;
         font-size: 40px;
@@ -104,7 +105,6 @@ body {
 
 .landingContainer {
   width: 100%;
-  margin-top: 4rem;
   background-image: url("../img/mixerMacBigOpt.jpg");
   background-size: cover;
   overflow: auto; }
@@ -126,7 +126,7 @@ body {
       height: 100%;
       margin-top: 4rem; }
       .landingContainer #landingBG #nameHolder #name {
-        margin-bottom: 6rem;
+        margin-bottom: 10rem;
         text-align: center;
         position: relative;
         font-size: 6rem;
@@ -368,6 +368,7 @@ footer {
   position: relative;
   height: 2.7rem;
   margin-top: -2.7rem;
+  background-color: rgba(212, 214, 214, 0.5);
   color: white;
   clear: both; }
   footer .iconsDiv {
@@ -377,6 +378,21 @@ footer {
     footer .iconsDiv .footerIcons {
       display: inline-block;
       margin: auto;
-      padding: 0 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: .4rem;
       width: 2rem;
       height: 2rem; }
+
+.iconsDiv2 {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center; }
+  .iconsDiv2 .footerIcons {
+    display: inline-block;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .4rem;
+    width: 2rem;
+    height: 2rem; }

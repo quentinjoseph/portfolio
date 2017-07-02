@@ -89,6 +89,7 @@ body{
           @media(max-width: 400px){
             display: block;
           }
+          position: absolute;
           text-align: center;
           // border-radius: 57px;
           width:60px;
@@ -176,7 +177,7 @@ body{
 // landing page
 .landingContainer{
   width:100%;
-  margin-top: 4rem;
+  // margin-top: 4rem;
   background-image: url('../img/mixerMacBigOpt.jpg');
   background-size: cover;
   overflow: auto;
@@ -206,9 +207,9 @@ body{
           font-size: 4rem;
         }
         @media(max-width: 1000px){
-        background-color: rgba(212, 214, 214,.9);  
+        background-color: rgba(212, 214, 214,.9);
         }
-        margin-bottom: 6rem;
+        margin-bottom: 10rem;
         // top:4rem;
         // margin-left: 205px;
         text-align: center;
@@ -457,7 +458,7 @@ footer{
   position:relative;
   height: 2.7rem;
   margin-top: -2.7rem;
-
+  background-color:rgba(212, 214, 214,.5);
   color:white;
   clear:both;
   .iconsDiv{
@@ -467,9 +468,25 @@ footer{
     .footerIcons{
       display:inline-block;
       margin:auto;
-      padding:0 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: .4rem;
       width: 2rem;
       height: 2rem;
     }
+  }
+}
+.iconsDiv2{
+  width:90%;
+  margin:2rem auto;
+  text-align: center;
+  .footerIcons{
+    display:inline-block;
+    margin:auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .4rem;
+    width: 2rem;
+    height: 2rem;
   }
 }

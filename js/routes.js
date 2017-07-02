@@ -1,7 +1,8 @@
 var app=angular.module('appMod', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider.when('/aboutMe', {
-      templateUrl: 'views/about.html'
+      templateUrl: 'views/about.html',
+      controller: 'controller1'
     }).when('/projects',{
       templateUrl: 'views/projects.html',
       controller: 'projectsController'

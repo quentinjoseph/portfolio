@@ -41,12 +41,13 @@ $scope.projectClick = function(){
 // check url for correct animation
 var theURLis = $location.path();
 $scope.checkURL = function(){
+
   if(theURLis == '/landing'){
-    $scope.nameClick();
+    document.getElementById('mobNav').style.color='white';
   }else if(theURLis == '/aboutMe'){
-    $scope.aboutClick();
+    document.getElementById('mobNav').style.color='black';
   }else if(theURLis == '/projects'){
-    $scope.projectClick();
+    document.getElementById('mobNav').style.color='black';
   }
 }
 $scope.checkURL();
