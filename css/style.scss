@@ -343,9 +343,13 @@ to{opacity: 1;}
         background-size: cover;
         background-position: center;
         &:hover{
-        opacity:.3;
-
+        // opacity:.3;
+        cursor: pointer;
+        border: orange 4px solid;
         }
+      }
+      .hovered{
+        display: none
       }
       #quentinsite{
         @media(max-width: 1000px){height: 5rem;}

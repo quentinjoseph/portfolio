@@ -271,7 +271,10 @@ body {
       .container #projectsHolder #websiteDiv #nikkisite {
         height: 1rem; } }
     .container #projectsHolder #websiteDiv #nikkisite:hover {
-      opacity: .3; }
+      cursor: pointer;
+      border: orange 4px solid; }
+  .container #projectsHolder #websiteDiv .hovered {
+    display: none; }
   .container #projectsHolder #websiteDiv #quentinsite {
     margin-left: auto;
     margin-right: auto;

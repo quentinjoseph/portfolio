@@ -87,8 +87,10 @@ console.log('down'+indexCount)
 // var nikksiteDetails= angular.element(document.querySelector('#nikkisiteDetails'));
 $scope.showDetails=function(data){
 var target = angular.element(document.querySelector('#'+data.target.id+'Details'));
+// var originalElement = angular.element(document.querySelector('#'+data.target.id));
+
     target.removeClass('hide');
-    
+
 }
  $scope.hideDetails=function(data){
    var details = angular.element(document.querySelector('#'+data.target.id+'Details'));
