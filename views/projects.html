@@ -11,15 +11,50 @@
 <!-- project div -->
 <div id="projectsHolder">
   <div id="websiteDiv" class="">
-    <a href="http://www.nicolejosephsoprano.com" target="_blank">
-      <div class="" ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="nikkisite"></div></a>
-    <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinsite"></div>
-    <div id="nikkisiteDetails" class="hide detailsDiv">
-    A site created from scratch using HTML5, CSS, Angular JS, JavaScript, NodeJS, Mailjet API, Google Maps API as well as geolocation,  and a Postgresql Database. Also uses the plugins, Lity, Lightbox, and Smoothscroll. nicolejosephsprano.com (click the thumbnail to visit the site)
+<div id="websiteDiv_show_hide">
+    <div class="thumb_holder">
+
+      <div class="" ng-click="showDetails($event)" id="nikkisite">
+      </div>
+      <!-- <div class="" ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="nikkisite">
+      </div> -->
+
+
+      <div ng-click="showDetails($event)" id="quentinsite"></div>
+      <!-- <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinsite"></div> -->
+
+
+      <div ng-click="showDetails($event)" id="quentinhype"></div>
+      <!-- <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinhype"></div> -->
+
+      <div ng-click="showDetails($event)" id="quentinpsd"></div>
+      <!-- <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinpsd"></div> -->
+
+      <div ng-click="showDetails($event)" id="quentinWiki"></div>
+      <!-- <div ng-mouseleave="hideDetails($event)" ng-mouseover="showDetails($event)" id="quentinpsd"></div> -->
+
     </div>
-    <div id="quentinsiteDetails" class="hide detailsDiv">
-    This site.  Created from scratch using HTML5, CSS, Angular JS, and JavaScript. Also uses the plugins, Lity and Smoothscroll.
-    </div>
+    <div class="details_holder">
+      <div id="nikkisiteDetails" class="hide  detailsDiv">
+      A site I created using HTML5, CSS, Angular JS, JavaScript, NodeJS, Mailjet API, Google Maps API as well as geolocation,  and a Postgresql Database. Also uses the plugins, Lity, Lightbox, and Smoothscroll. <a href="http://www.nicolejosephsoprano.com" target="blank">go to site</a>
+      </div>
+
+      <div id="quentinsiteDetails" class="hide  detailsDiv">
+      This site.  Created using HTML5, CSS, Angular JS, and JavaScript. Also uses the plugins Lity and Smoothscroll.<a href="http://www.quentinjoseph.com" target="blank">go to site</a>
+      </div>
+      <div id="quentinhypeDetails" class="hide  detailsDiv">
+      A group project created with my team at Grand Circus. This site allows people to create and find events near them.  Site was developed using HTML, CSS,JavaScript, AngularJS, NodeJS, Google Maps API with geolocation, MailJet API, as well as a PostgreSQL database.<a href="http://www.hypenings.herokuapp.com" target="blank">go to site</a>
+      </div>
+
+      <div id="quentinpsdDetails" class="hide  detailsDiv">
+      A project in which I was given a Photoshop psd file to cosmetically dublicate (skin).  This is site is the responsive result of that duplication.
+      <a href="http://qej.site" target="blank">go to site</a>
+      </div>
+      <div id="quentinWikiDetails" class="hide  detailsDiv">
+      A simple project that searches and shows results of Wikipedia searches.  Code gets JSON data from the Wiki API. Feel free to browse other projects I've done on CodePen
+      <a href="https://codepen.io/quentinjoseph/full/ayoLvW" target="blank">go to site</a>
+      </div>
+    </div></div>
   </div>
 
 <!--video div  -->

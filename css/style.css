@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,400");
 /*font-family: 'Josefin Sans', sans-serif;*/
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
 @font-face {
   font-family: proxy;
   src: url("../fonts/Proxima-Nova/ProximaNova-Regular.otf"); }
@@ -32,7 +33,7 @@ body {
     min-height: 100%; }
     body .container #wrapper {
       overflow: auto;
-      padding-bottom: 2.7rem; }
+      padding-bottom: 3.5rem; }
       body .container #wrapper .fullNav {
         width: 100vw;
         background-color: #222222;
@@ -107,7 +108,16 @@ body {
   width: 100%;
   background-image: url("../img/mixerMacBigOpt.jpg");
   background-size: cover;
-  overflow: auto; }
+  overflow: auto;
+  height: 92vh; }
+
+@-webkit-keyframes mixerAndMac {
+  0% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes mixerAndMac {
   0% {
@@ -121,20 +131,20 @@ body {
   .landingContainer #landingBG {
     margin-top: 2rem;
     margin-bottom: -1rem;
-    overflow: auto; }
+    height: 55vh; }
     .landingContainer #landingBG #nameHolder {
       height: 100%;
-      margin-top: 4rem; }
+      margin-top: 4rem;
+      font-family: sans-serif;
+      padding-left: 1rem; }
       .landingContainer #landingBG #nameHolder #name {
-        margin-bottom: 10rem;
-        text-align: center;
         position: relative;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: lighter;
-        background-color: rgba(212, 214, 214, 0.6);
         letter-spacing: 1rem;
         color: white;
-        animation: mixerAndMac .5s; }
+        -webkit-animation: mixerAndMac .5s;
+                animation: mixerAndMac .5s; }
         @media (max-width: 380px) {
           .landingContainer #landingBG #nameHolder #name {
             letter-spacing: 0; } }
@@ -143,17 +153,29 @@ body {
             font-size: 4rem; } }
         @media (max-width: 1000px) {
           .landingContainer #landingBG #nameHolder #name {
-            background-color: rgba(212, 214, 214, 0.9); } }
+            font-size: 3rem;
+            text-align: center; } }
         .landingContainer #landingBG #nameHolder #name span {
-          color: #9b0423;
-          animation: mixerAndMac .5s; }
+          -webkit-animation: mixerAndMac .5s;
+                  animation: mixerAndMac .5s; }
   .landingContainer .message {
-    text-align: center;
-    margin-top: 80px;
-    animation: mixerAndMac 1s;
-    color: black;
-    background-color: white;
-    padding-top: 1rem; }
+    -webkit-animation: mixerAndMac 1s;
+            animation: mixerAndMac 1s;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 12px; }
+    @media (max-width: 1000px) {
+      .landingContainer .message {
+        text-align: center;
+        padding-left: 0; } }
+
+@-webkit-keyframes aboutDiv {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @keyframes aboutDiv {
   0% {
@@ -166,12 +188,14 @@ body {
 .aboutDiv {
   border-radius: 5px;
   opacity: 1;
-  font-size: 27px;
+  font-size: 1rem;
+  font-family: verdana;
   width: 70vw;
   padding-top: 40px;
   margin: 1rem auto;
   text-align: center;
-  animation: aboutDiv 1s; }
+  -webkit-animation: aboutDiv 1s;
+          animation: aboutDiv 1s; }
   .aboutDiv .qface {
     width: 15rem;
     height: 15rem;
@@ -181,6 +205,14 @@ body {
     border-radius: 50%;
     background-position: center;
     color: black; }
+
+@-webkit-keyframes qdrums {
+  0% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes qdrums {
   0% {
@@ -192,7 +224,18 @@ body {
     .aboutDiv .qface #qdrums {
       width: 300px;
       border-radius: 150px;
-      animation: qdrums 3s; }
+      -webkit-animation: qdrums 3s;
+              animation: qdrums 3s; }
+
+@-webkit-keyframes textShow {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
 
 @keyframes textShow {
   0% {
@@ -207,7 +250,8 @@ body {
 .textShow {
   color: black;
   opacity: 1;
-  animation: textShow 2.5s; }
+  -webkit-animation: textShow 2.5s;
+          animation: textShow 2.5s; }
 
 .container .select {
   text-align: center;
@@ -216,6 +260,16 @@ body {
 
 .container .projectsNav {
   width: 100%; }
+
+@-webkit-keyframes navShow {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: .7; }
+  100% {
+    opacity: 1; } }
 
 @keyframes navShow {
   0% {
@@ -232,12 +286,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 45px; }
+    margin-top: 45px;
+    border-bottom: 1px solid #999; }
     .container .projectsNav ul li {
       font-size: 36px;
       padding: 0 10%;
       display: inline;
       list-style: none; }
+      @media (max-width: 775px) {
+        .container .projectsNav ul li {
+          font-size: 2rem; } }
       .container .projectsNav ul li span:hover {
         background-color: rgba(212, 214, 214, 0.4);
         border-radius: 5px;
@@ -245,66 +303,247 @@ body {
 
 .container #projectsHolder {
   margin-top: 2rem; }
-  .container #projectsHolder #websiteDiv #nikkisite {
-    margin: 0 auto;
-    width: 60vw;
-    height: 7rem;
-    background-image: url("../img/nikkisite.png");
-    background-size: cover;
-    background-position: center; }
-    @media (max-width: 1000px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 5rem; } }
-    @media (max-width: 730px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 6rem; } }
-    @media (max-width: 580px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 3rem; } }
-    @media (max-width: 435px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 2rem; } }
-    @media (max-width: 292px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 1.5rem; } }
-    @media (max-width: 225px) {
-      .container #projectsHolder #websiteDiv #nikkisite {
-        height: 1rem; } }
-    .container #projectsHolder #websiteDiv #nikkisite:hover {
-      cursor: pointer;
-      border: orange 4px solid; }
-  .container #projectsHolder #websiteDiv .hovered {
-    display: none; }
-  .container #projectsHolder #websiteDiv #quentinsite {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    width: 60vw;
-    height: 7rem;
-    background-image: url("../img/quentinsite.png");
-    background-size: cover;
-    background-position: center; }
-    @media (max-width: 1000px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 5rem; } }
-    @media (max-width: 730px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 6rem; } }
-    @media (max-width: 580px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 3rem; } }
-    @media (max-width: 435px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 2rem; } }
-    @media (max-width: 292px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 1.5rem; } }
-    @media (max-width: 225px) {
-      .container #projectsHolder #websiteDiv #quentinsite {
-        height: 1rem; } }
-  .container #projectsHolder #websiteDiv .detailsDiv {
-    width: 60vw;
-    margin: 1rem auto; }
+  .container #projectsHolder #websiteDiv #websiteDiv_show_hide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media (max-width: 775px) {
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .container #projectsHolder #websiteDiv #websiteDiv_show_hide img {
+      width: 100%; }
+    .container #projectsHolder #websiteDiv #websiteDiv_show_hide .selectedSite {
+      border: solid 2px #FF0000;
+      box-shadow: none !important; }
+    .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder {
+      margin: 0 auto;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 75%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      @media (max-width: 775px) {
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #nikkisite {
+        min-width: 45%;
+        max-width: 90%;
+        height: 5rem;
+        background-image: url("../img/nikkisite.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 1rem;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #nikkisite:active {
+          box-shadow: none !important;
+          border-radius: 10px;
+          border: solid 1px orange; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #nikkisite:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+          border-radius: 10px; }
+          .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #nikkisite:hover > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder .go {
+        font-size: 200%;
+        background-color: white;
+        border-radius: 5px;
+        color: blue; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder .go a {
+          color: blue; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder .hovered {
+        display: none; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinsite {
+        min-width: 45%;
+        max-width: 90%;
+        height: 5rem;
+        background-image: url("../img/quentinsite.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinsite:active {
+          box-shadow: none !important;
+          border-radius: 10px;
+          border: solid 1px orange; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinsite:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+          border-radius: 10px; }
+          .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinsite:hover > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinhype {
+        min-width: 45%;
+        max-width: 90%;
+        height: 5rem;
+        background-image: url("../img/hypenings.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 1rem;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinhype:active {
+          box-shadow: none !important;
+          border-radius: 10px;
+          border: solid 1px orange; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinhype:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+          border-radius: 10px; }
+          .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinhype:hover > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinpsd {
+        min-width: 45%;
+        max-width: 90%;
+        height: 5rem;
+        background-image: url("../img/quentinpsd.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinpsd:active {
+          box-shadow: none !important;
+          border-radius: 10px;
+          border: solid 1px orange; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinpsd:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+          border-radius: 10px; }
+          .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinpsd:hover > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinWiki {
+        min-width: 45%;
+        max-width: 90%;
+        height: 5rem;
+        background-image: url("../img/quentinWiki.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinWiki:active {
+          box-shadow: none !important;
+          border-radius: 10px;
+          border: solid 1px orange; }
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinWiki:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75);
+          border-radius: 10px; }
+          .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder #quentinWiki:hover > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .thumb_holder a {
+        text-decoration: none; }
+    .container #projectsHolder #websiteDiv #websiteDiv_show_hide .details_holder {
+      width: 75%;
+      margin: 1rem auto;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+      @media (max-width: 775px) {
+        .container #projectsHolder #websiteDiv #websiteDiv_show_hide .details_holder {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
+      .container #projectsHolder #websiteDiv #websiteDiv_show_hide .details_holder .detailsDiv {
+        width: 100%;
+        text-align: center;
+        color: #646464;
+        text-decoration: none;
+        font-size: 1.05rem;
+        border-radius: 10px;
+        padding-top: 1rem; }
   .container #projectsHolder #audioDiv {
     margin: 0 auto;
     width: 95vw;
@@ -316,7 +555,8 @@ body {
       .container #projectsHolder #audioDiv #soundcloudStuff iframe {
         width: 75vw;
         height: 50vh;
-        margin: 0 auto; }
+        margin: 0 auto;
+        box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75); }
   .container #projectsHolder #videoDiv #youtubeStuff {
     width: 100%;
     overflow: auto;
@@ -333,7 +573,8 @@ body {
         height: auto; }
         .container #projectsHolder #videoDiv #youtubeStuff .videoImage img:hover {
           width: 105%;
-          transition: .25s; }
+          transition: .25s;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.75); }
   .container #projectsHolder #videoDiv #arrowsDiv {
     width: 100vw;
     font-size: 2rem;
@@ -369,23 +610,29 @@ body {
 footer {
   width: 100vw;
   position: relative;
-  height: 2.7rem;
-  margin-top: -2.7rem;
+  height: 3.5rem;
+  margin-top: -3.5rem;
   background-color: rgba(212, 214, 214, 0.5);
   color: white;
-  clear: both; }
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   footer .iconsDiv {
+    color: #646464;
     width: 90%;
     margin: 0 auto;
     text-align: center; }
     footer .iconsDiv .footerIcons {
-      display: inline-block;
-      margin: auto;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: .4rem;
       width: 2rem;
-      height: 2rem; }
+      height: 2rem;
+      padding: 0 1rem; }
 
 .iconsDiv2 {
   width: 90%;

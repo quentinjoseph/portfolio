@@ -83,20 +83,60 @@ console.log('down'+indexCount)
 }
 
 }
+// show website details variables
+var nikDetails = angular.element(document.querySelector('#nikkisiteDetails'));
+var qDetails = angular.element(document.querySelector('#quentinsiteDetails'));
+var hypeDetails = angular.element(document.querySelector('#quentinhypeDetails'));
+var psdDetails = angular.element(document.querySelector('#quentinpsdDetails'));
+var wikiDetails = angular.element(document.querySelector('#quentinWikiDetails'));
+var nik = angular.element(document.querySelector('#nikkisite'));
+var q = angular.element(document.querySelector('#quentinsite'));
+var hype = angular.element(document.querySelector('#quentinhype'));
+var psd = angular.element(document.querySelector('#quentinpsd'));
+var wiki = angular.element(document.querySelector('#quentinWiki'));
+$scope.detailsArr=[nikDetails, qDetails,hypeDetails,psdDetails,wikiDetails];
+$scope.selectArr=[nik, q,hype,psd, wiki];
+$scope.turnOff=[];
+$scope.detailsShowing=false;
 
-// var nikksiteDetails= angular.element(document.querySelector('#nikkisiteDetails'));
+// show website details function
 $scope.showDetails=function(data){
 var target = angular.element(document.querySelector('#'+data.target.id+'Details'));
-// var originalElement = angular.element(document.querySelector('#'+data.target.id));
-
+var target2 = angular.element(document.querySelector('#'+data.target.id));
+  if($scope.detailsShowing===false){
     target.removeClass('hide');
+    target2.addClass('selectedSite');
+    $scope.detailsShowing=true;
+      for(i=0; i<$scope.detailsArr.length; i++){
+        if(target[0].id!==$scope.detailsArr[i][0].id){
+          $scope.turnOff.push($scope.detailsArr[i]);
+        }
+      }
+      for(i=0;i<$scope.turnOff.length; i++){
+        $scope.turnOff[i].addClass('hide');
+        $scope.turnOff[i].removeClass('selectedSite');
+      }
+  }else if($scope.detailsShowing===true){
+      for(i=0; i<$scope.detailsArr.length;i++){
+        if($scope.detailsArr[i].hasClass('hide')){
 
+        }else {
+          $scope.detailsArr[i].addClass('hide');
+          // console.log(target[0].id)
+          target.removeClass('hide');
+          for(i=0; i<$scope.selectArr.length;i++){
+          $scope.selectArr[i].removeClass('selectedSite');
+          }
+          target2.addClass('selectedSite');
+
+        }
+      }
+
+  }
 }
  $scope.hideDetails=function(data){
    var details = angular.element(document.querySelector('#'+data.target.id+'Details'));
-
        details.addClass('hide');
-
 
  }
 
